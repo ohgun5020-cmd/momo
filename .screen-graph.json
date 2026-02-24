@@ -1,0 +1,433 @@
+{
+  "nodes": [
+    {
+      "id": "src/screens/Element/Element.tsx",
+      "label": "Element",
+      "routes": [
+        "/*",
+        "/x1"
+      ],
+      "dataModelId": "8002:1526",
+      "isRoot": true
+    },
+    {
+      "id": "src/screens/ElementScreen/ElementScreen.tsx",
+      "label": "ElementScreen",
+      "routes": [
+        "/x5"
+      ],
+      "dataModelId": "8002:1583"
+    },
+    {
+      "id": "src/screens/ElementWrapper/ElementWrapper.tsx",
+      "label": "ElementWrapper",
+      "routes": [
+        "/x10"
+      ],
+      "dataModelId": "8002:1724"
+    },
+    {
+      "id": "src/screens/DivWrapper/DivWrapper.tsx",
+      "label": "DivWrapper",
+      "routes": [
+        "/x7",
+        "/x9"
+      ],
+      "dataModelId": "8002:1872"
+    },
+    {
+      "id": "src/screens/Screen4/Screen4.tsx",
+      "label": "Screen4",
+      "routes": [
+        "/x3"
+      ],
+      "dataModelId": "8002:1337"
+    },
+    {
+      "id": "src/screens/Screen5/Screen5.tsx",
+      "label": "Screen5",
+      "routes": [
+        "/x6"
+      ],
+      "dataModelId": "8002:1596"
+    },
+    {
+      "id": "src/screens/Screen6/Screen6.tsx",
+      "label": "Screen6",
+      "routes": [
+        "/x8"
+      ],
+      "dataModelId": "8002:1646"
+    },
+    {
+      "id": "src/screens/Screen8/Screen8.tsx",
+      "label": "Screen8",
+      "routes": [
+        "/x2"
+      ],
+      "dataModelId": "8002:1164"
+    },
+    {
+      "id": "src/screens/Screen9/Screen9.tsx",
+      "label": "Screen9",
+      "routes": [
+        "/x4"
+      ],
+      "dataModelId": "8002:1544"
+    }
+  ],
+  "edges": [
+    {
+      "id": "src\\screens\\Element\\Element.tsx:23:6-to-src\\screens\\Screen8\\Screen8.tsx",
+      "source": "src\\screens\\Element\\Element.tsx",
+      "target": "src\\screens\\Screen8\\Screen8.tsx",
+      "data": {
+        "viaRoute": "/x2",
+        "trigger": {
+          "element": "<Link\n        to=\"/x2\"\n        aria-label=\"Navigate to next screen\"\n        className=\"absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[4]\"\n      >\n        <img\n          className=\"w-[100px] block\"\n          alt=\"QR code container\"\n          src=\"/img/container.svg\"\n        />\n      </Link>",
+          "line": 23,
+          "endLine": 33,
+          "column": 6,
+          "endColumn": 13,
+          "sourceFile": "src\\screens\\Element\\Element.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\ElementScreen\\ElementScreen.tsx:49:8-to-src\\screens\\Screen9\\Screen9.tsx",
+      "source": "src\\screens\\ElementScreen\\ElementScreen.tsx",
+      "target": "src\\screens\\Screen9\\Screen9.tsx",
+      "data": {
+        "viaRoute": "/x4",
+        "trigger": {
+          "element": "<Link\n          className=\"absolute top-[598px] left-1/2 -translate-x-1/2 w-[327px] h-[72px] flex items-center justify-center rounded-[24px] bg-[rgba(83,53,255,0.10)] backdrop-blur-[5px] border border-[#7e74b6] shadow-[inset_1px_0_0_rgba(255,255,255,0.24),inset_-1px_0_2px_rgba(0,0,0,0.18)] z-[6]\"\n          style={{ background: \"color(display-p3 0.3098 0.2118 1 / 0.10)\" }}\n          to=\"/x4\"\n          aria-label=\"안전 모드 진행하기\"\n        >\n          <span className=\"h-4 ml-0.5 w-[140px] [font-family:'Inter',Helvetica] text-white text-center leading-4 whitespace-nowrap flex items-center justify-center font-medium text-base tracking-[0]\">\n            안전 모드 진행하기\n          </span>\n        </Link>",
+          "line": 49,
+          "endLine": 58,
+          "column": 8,
+          "endColumn": 15,
+          "sourceFile": "src\\screens\\ElementScreen\\ElementScreen.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\ElementScreen\\ElementScreen.tsx:60:8-to-src\\screens\\Screen5\\Screen5.tsx",
+      "source": "src\\screens\\ElementScreen\\ElementScreen.tsx",
+      "target": "src\\screens\\Screen5\\Screen5.tsx",
+      "data": {
+        "viaRoute": "/x6",
+        "trigger": {
+          "element": "<Link\n          className=\"absolute top-[690px] left-1/2 -translate-x-1/2 w-[327px] h-[72px] flex items-center justify-center bg-[#7937fa] rounded-3xl z-[6]\"\n          to=\"/x6\"\n          aria-label=\"시원하게 가보자\"\n        >\n          <span className=\"h-4 ml-0.5 w-[128px] [font-family:'Inter',Helvetica] font-semibold text-white text-base text-center leading-6 whitespace-nowrap\">\n            시원하게 가보자!\n          </span>\n        </Link>",
+          "line": 60,
+          "endLine": 68,
+          "column": 8,
+          "endColumn": 15,
+          "sourceFile": "src\\screens\\ElementScreen\\ElementScreen.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\ElementWrapper\\ElementWrapper.tsx:60:10-to-src\\screens\\Screen5\\Screen5.tsx",
+      "source": "src\\screens\\ElementWrapper\\ElementWrapper.tsx",
+      "target": "src\\screens\\Screen5\\Screen5.tsx",
+      "data": {
+        "viaRoute": "/x6",
+        "trigger": {
+          "element": "<Link className=\"absolute left-5 top-1 w-6 h-6 text-white\" to=\"/x6\" aria-label=\"Back\">\n            <MenuIcon />\n          </Link>",
+          "line": 60,
+          "endLine": 62,
+          "column": 10,
+          "endColumn": 17,
+          "sourceFile": "src\\screens\\ElementWrapper\\ElementWrapper.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\ElementWrapper\\ElementWrapper.tsx:107:22-to-src\\screens\\Screen6\\Screen6.tsx",
+      "source": "src\\screens\\ElementWrapper\\ElementWrapper.tsx",
+      "target": "src\\screens\\Screen6\\Screen6.tsx",
+      "data": {
+        "viaRoute": "/x8",
+        "trigger": {
+          "element": "navigate(\"/x8\")",
+          "line": 107,
+          "endLine": 107,
+          "column": 22,
+          "endColumn": 37,
+          "sourceFile": "src\\screens\\ElementWrapper\\ElementWrapper.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\DivWrapper\\DivWrapper.tsx:126:4-to-src\\screens\\Screen6\\Screen6.tsx",
+      "source": "src\\screens\\DivWrapper\\DivWrapper.tsx",
+      "target": "src\\screens\\Screen6\\Screen6.tsx",
+      "data": {
+        "viaRoute": "/x8",
+        "trigger": {
+          "element": "navigate(\"/x8\", { state: { draft } })",
+          "line": 126,
+          "endLine": 126,
+          "column": 4,
+          "endColumn": 41,
+          "sourceFile": "src\\screens\\DivWrapper\\DivWrapper.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\DivWrapper\\DivWrapper.tsx:134:6-to-src\\screens\\Screen6\\Screen6.tsx",
+      "source": "src\\screens\\DivWrapper\\DivWrapper.tsx",
+      "target": "src\\screens\\Screen6\\Screen6.tsx",
+      "data": {
+        "viaRoute": "/x8",
+        "trigger": {
+          "element": "navigate(\"/x8\", { state: { draft: card.subtitle } })",
+          "line": 134,
+          "endLine": 134,
+          "column": 6,
+          "endColumn": 58,
+          "sourceFile": "src\\screens\\DivWrapper\\DivWrapper.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\DivWrapper\\DivWrapper.tsx:158:10-to-src\\screens\\Screen5\\Screen5.tsx",
+      "source": "src\\screens\\DivWrapper\\DivWrapper.tsx",
+      "target": "src\\screens\\Screen5\\Screen5.tsx",
+      "data": {
+        "viaRoute": "/x6",
+        "trigger": {
+          "element": "<Link className=\"absolute left-5 top-1 w-6 h-6 text-white\" to=\"/x6\" aria-label=\"Back\">\n            <MenuIcon />\n          </Link>",
+          "line": 158,
+          "endLine": 160,
+          "column": 10,
+          "endColumn": 17,
+          "sourceFile": "src\\screens\\DivWrapper\\DivWrapper.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\DivWrapper\\DivWrapper.tsx:201:22-to-src\\screens\\ElementWrapper\\ElementWrapper.tsx",
+      "source": "src\\screens\\DivWrapper\\DivWrapper.tsx",
+      "target": "src\\screens\\ElementWrapper\\ElementWrapper.tsx",
+      "data": {
+        "viaRoute": "/x10",
+        "trigger": {
+          "element": "navigate(\"/x10\")",
+          "line": 201,
+          "endLine": 201,
+          "column": 22,
+          "endColumn": 38,
+          "sourceFile": "src\\screens\\DivWrapper\\DivWrapper.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\Screen4\\Screen4.tsx:62:12-to-src\\screens\\Screen9\\Screen9.tsx",
+      "source": "src\\screens\\Screen4\\Screen4.tsx",
+      "target": "src\\screens\\Screen9\\Screen9.tsx",
+      "data": {
+        "viaRoute": "/x4",
+        "trigger": {
+          "element": "<Link\n              className=\"flex h-[47.71px] w-[327.29px] shrink-0 items-center justify-center gap-[5.725px] rounded-[13.359px] px-[69.656px] py-[11.45px] bg-[rgba(120,120,130,0.20)] [background:color(display-p3_0.4706_0.4706_0.502_/_0.20)]\"\n              to=\"/x4\"\n              aria-label=\"Continue with Apple\"\n            >\n              <div className=\"relative w-[13px] h-[13px] overflow-hidden\">\n                <div className=\"relative w-[11px] h-[13px] left-px\">\n                  <img\n                    className=\"absolute w-[24.82%] h-[23.10%] top-0 left-[49.75%]\"\n                    alt=\"\"\n                    src=\"/img/vector-2.svg\"\n                  />\n                  <img\n                    className=\"absolute w-full h-[75.88%] top-[24.12%] left-0\"\n                    alt=\"\"\n                    src=\"/img/vector-3.svg\"\n                  />\n                </div>\n              </div>\n              <span className=\"[font-family:'Inter',Helvetica] font-medium text-white text-base leading-6 tracking-[-0.4px]\">\n                Continue with Apple\n              </span>\n            </Link>",
+          "line": 62,
+          "endLine": 84,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src\\screens\\Screen4\\Screen4.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\Screen4\\Screen4.tsx:86:12-to-src\\screens\\Screen9\\Screen9.tsx",
+      "source": "src\\screens\\Screen4\\Screen4.tsx",
+      "target": "src\\screens\\Screen9\\Screen9.tsx",
+      "data": {
+        "viaRoute": "/x4",
+        "trigger": {
+          "element": "<Link\n              className=\"flex h-[47.71px] w-[327.29px] shrink-0 items-center justify-center gap-[5.725px] rounded-[13.359px] px-[69.656px] py-[11.45px] bg-[rgba(120,120,130,0.20)] [background:color(display-p3_0.4706_0.4706_0.502_/_0.20)]\"\n              to=\"/x4\"\n              aria-label=\"Continue with Google\"\n            >\n              <div className=\"relative w-[15px] h-[15px]\">\n                <img\n                  className=\"absolute w-[47.84%] h-[46.84%] top-[40.75%] left-[50.97%]\"\n                  alt=\"\"\n                  src=\"/img/vector-4.svg\"\n                />\n                <img\n                  className=\"absolute w-[77.51%] h-[39.97%] top-[59.69%] left-[6.46%]\"\n                  alt=\"\"\n                  src=\"/img/vector-5.svg\"\n                />\n                <img\n                  className=\"absolute w-[21.48%] h-[44.98%] top-[27.22%] left-0\"\n                  alt=\"\"\n                  src=\"/img/vector-6.svg\"\n                />\n                <img\n                  className=\"absolute w-[77.84%] h-[39.97%] top-0 left-[6.46%]\"\n                  alt=\"\"\n                  src=\"/img/vector-7.svg\"\n                />\n              </div>\n              <span className=\"[font-family:'Inter',Helvetica] font-medium text-white text-base leading-6 tracking-[-0.4px]\">\n                Continue with Google\n              </span>\n            </Link>",
+          "line": 86,
+          "endLine": 116,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src\\screens\\Screen4\\Screen4.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\Screen5\\Screen5.tsx:95:6-to-src\\screens\\Screen6\\Screen6.tsx",
+      "source": "src\\screens\\Screen5\\Screen5.tsx",
+      "target": "src\\screens\\Screen6\\Screen6.tsx",
+      "data": {
+        "viaRoute": "/x8",
+        "trigger": {
+          "element": "navigate(\"/x8\", { state: { draft: card.subtitle } })",
+          "line": 95,
+          "endLine": 95,
+          "column": 6,
+          "endColumn": 58,
+          "sourceFile": "src\\screens\\Screen5\\Screen5.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\Screen5\\Screen5.tsx:119:10-to-src\\screens\\ElementScreen\\ElementScreen.tsx",
+      "source": "src\\screens\\Screen5\\Screen5.tsx",
+      "target": "src\\screens\\ElementScreen\\ElementScreen.tsx",
+      "data": {
+        "viaRoute": "/x5",
+        "trigger": {
+          "element": "<Link className=\"absolute left-5 top-1 w-6 h-6 text-white\" to=\"/x5\" aria-label=\"Back\">\n            <MenuIcon />\n          </Link>",
+          "line": 119,
+          "endLine": 121,
+          "column": 10,
+          "endColumn": 17,
+          "sourceFile": "src\\screens\\Screen5\\Screen5.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\Screen5\\Screen5.tsx:162:22-to-src\\screens\\ElementWrapper\\ElementWrapper.tsx",
+      "source": "src\\screens\\Screen5\\Screen5.tsx",
+      "target": "src\\screens\\ElementWrapper\\ElementWrapper.tsx",
+      "data": {
+        "viaRoute": "/x10",
+        "trigger": {
+          "element": "navigate(\"/x10\")",
+          "line": 162,
+          "endLine": 162,
+          "column": 22,
+          "endColumn": 38,
+          "sourceFile": "src\\screens\\Screen5\\Screen5.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\Screen5\\Screen5.tsx:178:8-to-src\\screens\\DivWrapper\\DivWrapper.tsx",
+      "source": "src\\screens\\Screen5\\Screen5.tsx",
+      "target": "src\\screens\\DivWrapper\\DivWrapper.tsx",
+      "data": {
+        "viaRoute": "/x7",
+        "trigger": {
+          "element": "<Link\n          to=\"/x7\"\n          className=\"absolute left-1/2 -translate-x-1/2 top-[414px] w-[63px] h-[25px] z-[4]\"\n          aria-label=\"Open chat\"\n        >\n          <img className=\"w-full h-full\" alt=\"MOMO logo\" src=\"/img/vector-8.svg\" />\n        </Link>",
+          "line": 178,
+          "endLine": 184,
+          "column": 8,
+          "endColumn": 15,
+          "sourceFile": "src\\screens\\Screen5\\Screen5.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\Screen5\\Screen5.tsx:229:12-to-src\\screens\\DivWrapper\\DivWrapper.tsx",
+      "source": "src\\screens\\Screen5\\Screen5.tsx",
+      "target": "src\\screens\\DivWrapper\\DivWrapper.tsx",
+      "data": {
+        "viaRoute": "/x7",
+        "trigger": {
+          "element": "<Link\n              to=\"/x7\"\n              state={{ draft: quickBubbleText }}\n              className=\"ml-1 flex-1 h-10 rounded-[22px] border border-[#4d4858] bg-[#180e22dd] px-4 flex items-center\"\n              aria-label=\"Open input\"\n            >\n              <span\n                className={`[font-family:'SF_Pro-Regular',Helvetica] text-[17px] leading-[22px] ${\n                  selectedQuickCardId ? \"font-semibold text-white\" : \"font-normal text-[#ffffff4d]\"\n                }`}\n              >\n                {quickBubbleText}\n              </span>\n              <span className=\"ml-auto text-[#ffffff99]\">\n                <MicIcon />\n              </span>\n            </Link>",
+          "line": 229,
+          "endLine": 245,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src\\screens\\Screen5\\Screen5.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\Screen6\\Screen6.tsx:77:10-to-src\\screens\\ElementScreen\\ElementScreen.tsx",
+      "source": "src\\screens\\Screen6\\Screen6.tsx",
+      "target": "src\\screens\\ElementScreen\\ElementScreen.tsx",
+      "data": {
+        "viaRoute": "/x5",
+        "trigger": {
+          "element": "<Link className=\"absolute left-5 top-1 w-6 h-6 text-white\" to=\"/x5\" aria-label=\"Back\">\n            <MenuIcon />\n          </Link>",
+          "line": 77,
+          "endLine": 79,
+          "column": 10,
+          "endColumn": 17,
+          "sourceFile": "src\\screens\\Screen6\\Screen6.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\Screen6\\Screen6.tsx:123:22-to-src\\screens\\ElementWrapper\\ElementWrapper.tsx",
+      "source": "src\\screens\\Screen6\\Screen6.tsx",
+      "target": "src\\screens\\ElementWrapper\\ElementWrapper.tsx",
+      "data": {
+        "viaRoute": "/x10",
+        "trigger": {
+          "element": "navigate(\"/x10\")",
+          "line": 123,
+          "endLine": 123,
+          "column": 22,
+          "endColumn": 38,
+          "sourceFile": "src\\screens\\Screen6\\Screen6.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\Screen8\\Screen8.tsx:56:8-to-src\\screens\\Screen4\\Screen4.tsx",
+      "source": "src\\screens\\Screen8\\Screen8.tsx",
+      "target": "src\\screens\\Screen4\\Screen4.tsx",
+      "data": {
+        "viaRoute": "/x3",
+        "trigger": {
+          "element": "<Link\n          className=\"absolute left-1/2 -translate-x-1/2 bottom-[51px] w-[327px] h-[72px] flex items-center justify-center rounded-[24px] border border-[#7f72ba] bg-[#4f36ff24] backdrop-blur-[5px] z-[8]\"\n          to=\"/x3\"\n          aria-label=\"다음 화면으로 이동\"\n        >\n          <span className=\"[font-family:'Inter',Helvetica] font-semibold text-white text-base tracking-[0] leading-6\">\n            계속해볼까?\n          </span>\n        </Link>",
+          "line": 56,
+          "endLine": 64,
+          "column": 8,
+          "endColumn": 15,
+          "sourceFile": "src\\screens\\Screen8\\Screen8.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\Screen9\\Screen9.tsx:40:10-to-src\\screens\\Screen4\\Screen4.tsx",
+      "source": "src\\screens\\Screen9\\Screen9.tsx",
+      "target": "src\\screens\\Screen4\\Screen4.tsx",
+      "data": {
+        "viaRoute": "/x3",
+        "trigger": {
+          "element": "<Link to=\"/x3\" aria-label=\"뒤로 가기\" className=\"w-6 h-6 flex items-center justify-center\">\n            <img className=\"w-6 h-6\" alt=\"뒤로 가기\" src=\"/img/left-actionable.svg\" />\n          </Link>",
+          "line": 40,
+          "endLine": 42,
+          "column": 10,
+          "endColumn": 17,
+          "sourceFile": "src\\screens\\Screen9\\Screen9.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\Screen9\\Screen9.tsx:44:10-to-src\\screens\\ElementScreen\\ElementScreen.tsx",
+      "source": "src\\screens\\Screen9\\Screen9.tsx",
+      "target": "src\\screens\\ElementScreen\\ElementScreen.tsx",
+      "data": {
+        "viaRoute": "/x5",
+        "trigger": {
+          "element": "<Link\n            to=\"/x5\"\n            className=\"[font-family:'Inter',Helvetica] font-light text-[#6d86ff] text-base leading-6\"\n            aria-label=\"나중에 하기\"\n          >\n            나중에 하기\n          </Link>",
+          "line": 44,
+          "endLine": 50,
+          "column": 10,
+          "endColumn": 17,
+          "sourceFile": "src\\screens\\Screen9\\Screen9.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\Screen9\\Screen9.tsx:131:8-to-src\\screens\\ElementScreen\\ElementScreen.tsx",
+      "source": "src\\screens\\Screen9\\Screen9.tsx",
+      "target": "src\\screens\\ElementScreen\\ElementScreen.tsx",
+      "data": {
+        "viaRoute": "/x5",
+        "trigger": {
+          "element": "<Link\n          className=\"absolute left-1/2 -translate-x-1/2 bottom-[50px] w-[327px] h-[72px] rounded-[24px] bg-[linear-gradient(90deg,#6f37f6_0%,#7f3cf8_100%)] flex items-center justify-center\"\n          to=\"/x5\"\n          aria-label=\"시작\"\n        >\n          <span className=\"[font-family:'Inter',Helvetica] font-semibold text-white text-base leading-6\">시작!</span>\n        </Link>",
+          "line": 131,
+          "endLine": 137,
+          "column": 8,
+          "endColumn": 15,
+          "sourceFile": "src\\screens\\Screen9\\Screen9.tsx"
+        }
+      }
+    }
+  ]
+}

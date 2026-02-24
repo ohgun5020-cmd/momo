@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  button,
+  input,
+  select,
+  textarea {
+    @apply appearance-none bg-transparent border-0 outline-none;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --bg-dark: rgba(35, 19, 67, 1);
+  --body-font-family: "Inter", Helvetica;
+  --body-font-size: 16px;
+  --body-font-style: normal;
+  --body-font-weight: 500;
+  --body-letter-spacing: -0.24px;
+  --body-line-height: 139.9999976158142%;
+  --content-bold-font-family: "Inter", Helvetica;
+  --content-bold-font-size: 16px;
+  --content-bold-font-style: normal;
+  --content-bold-font-weight: 700;
+  --content-bold-letter-spacing: 0px;
+  --content-bold-line-height: 24px;
+  --h1-font-family: "Inter", Helvetica;
+  --h1-font-size: 72px;
+  --h1-font-style: normal;
+  --h1-font-weight: 500;
+  --h1-letter-spacing: 0px;
+  --h1-line-height: 72px;
+  --h2-font-family: "Inter", Helvetica;
+  --h2-font-size: 32px;
+  --h2-font-style: normal;
+  --h2-font-weight: 500;
+  --h2-letter-spacing: -0.48px;
+  --h2-line-height: 40px;
+  --ios-colors-fills-primary: rgba(120, 120, 128, 0.2);
+  --neutralblack: rgba(9, 10, 10, 1);
+  --neutralgrey: rgba(114, 119, 122, 1);
+  --neutrallighter-grey: rgba(242, 244, 245, 1);
+  --neutralwhite: rgba(255, 255, 255, 1);
+  --playground-bg: rgba(255, 255, 255, 1);
+  --playground-bg-secondary: rgba(210, 210, 225, 1);
+  --playground-bg-section: rgba(210, 210, 225, 1);
+  --playground-bg-tryout: rgba(204, 204, 242, 1);
+  --playground-cta: rgba(0, 0, 0, 1);
+  --playground-radius-large: 16px;
+  --playground-radius-medium: 8px;
+  --playground-text: rgba(1, 1, 4, 1);
+  --playground-text-on-cta: rgba(255, 255, 255, 1);
+  --primaryblue: rgba(72, 104, 236, 1);
+  --regular-none-medium-font-family: "Plus Jakarta Sans", Helvetica;
+  --regular-none-medium-font-size: 16px;
+  --regular-none-medium-font-style: normal;
+  --regular-none-medium-font-weight: 500;
+  --regular-none-medium-letter-spacing: 0px;
+  --regular-none-medium-line-height: 16px;
+  --subheader-font-family: "Inter", Helvetica;
+  --subheader-font-size: 24px;
+  --subheader-font-style: normal;
+  --subheader-font-weight: 400;
+  --subheader-letter-spacing: 0px;
+  --subheader-line-height: 32px;
+  --UI-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15), 0px 0px 0.5px 0px
+    rgba(0, 0, 0, 0.3);
+}
+
+[data-ios-colors-mode="light"] {
+  --ios-colors-fills-primary: rgba(120, 120, 128, 0.2);
+}
+
+[data-ios-colors-mode="dark"] {
+  --ios-colors-fills-primary: rgba(120, 120, 128, 0.36);
+}
+
+:root {
+  --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+  animation: var(--animate-spin);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
